@@ -1,0 +1,41 @@
+<!--hello
+<ul>
+<li *ngFor = 'let data of countriList'>{{data['name']+data['capital']}} </li>
+    </ul>-->
+   <!---- <div>
+            
+            <input type="radio" name="colors" (click)="highlightColor='lightgreen'">Green
+            <input type="radio" name="colors" (click)="highlightColor='yellow'">Yellow
+            <input type="radio" name="colors" (click)="highlightColor='cyan'">Cyan
+            <li *ngFor = 'let data of countriList'>{{data['name']}}</li>
+            <p [appRadioButton]="highlightColor" defaultColor="violet"></p>
+          </div> -->
+    
+
+
+
+          <h1>My First Attribute Directive</h1>
+<div> Today's date is <b> {{todaysDate | date:'dd/mm/yy'}}</b></div>
+<div> MyAmount {{amount | currency}}</div>
+<h4>Pick a highlight color</h4>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<!--<p [appRadiobutton]="color">Highlight me!</p>
+
+<p [appRadiobutton]="color" defaultColor="violet">
+  Highlight me too!
+</p>-->
+  <ul>
+    <li *ngFor = 'let data of countriList'
+    [appRadiobutton]="color" 
+    appHighlight='color'
+    
+    >{{data['name']+data['capital']}} 
+    
+<b>{{data['regionalBlocs'] | countryregionalblocs:'long':'short'}} </b>
+     </li>
+        </ul>-->
+    
